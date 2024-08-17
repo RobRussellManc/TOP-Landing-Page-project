@@ -37,14 +37,16 @@ body {
 
 .top_box, .footer {
     display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
     margin: 0px;
     min-height: 300px;
     gap: 30px;
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .footer {
@@ -53,12 +55,17 @@ body {
 }
 
 .top_box_left {
-    padding: 80px;
-    max-width: 500px;
+    flex-basis:10%;
+    max-width: 400px;
+    flex: 1;
+}
+
+.top_box_right {
+    flex-shrink: 3;
 }
 
 .top_h1 {font-size: 40px; color: #f0faf8; font-weight:bold}
-.middle_h1 {font-size: 40px; color: #1F2937; font-weight:bold}
+.middle_h1 {font-size: 40px; color: #1F2937; font-weight:bold; text-align: center;}
 h4 {font-size: 18px; color: #E5E7EB;}
 
 .blue_text_button, .white_text_button  {
@@ -79,21 +86,39 @@ h4 {font-size: 18px; color: #E5E7EB;}
     align-items: center;
     min-height: 350px;
     height: auto;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.middle_box {margin-bottom: 40px;}
+.middle_box {
+    margin-bottom: 40px;
+}
+
+.middle_box_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
 
 .blue_box {
     display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: center;
     background-color: #3882f6 ;
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 10px;
-    padding: 40px 160px;
-    gap: 80px;
+    padding: 40px 10vw;
+    gap: 5vw;
     align-items: center;
+    min-width: 200px
+}
+
+.blue_box_left {
+    max-width: 350px;
 }
 
 .blue_advert {
@@ -108,7 +133,7 @@ h4 {font-size: 18px; color: #E5E7EB;}
 
 .info_box {
     display: inline-block;
-    height: 150px;
+    height: 100%;
     width: 150px;
     margin: 15px;
     text-align: center;
