@@ -4,7 +4,7 @@ body {
     display:flex;
     flex-direction: column; 
     margin: 0px;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -22,6 +22,7 @@ body {
 .logo {
     flex-grow: 1;
     font-size: 24px;
+    font-weight:bolder;
     color: #F9FAF8;
     text-decoration: none;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -34,7 +35,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.top_box {
+.top_box, .footer {
     display: flex;
     margin: 0px;
     min-height: 300px;
@@ -44,6 +45,11 @@ body {
     background-color: #1F2937;
     padding-left: 20vw;
     padding-right: 20vw;
+}
+
+.footer {
+    min-height: 100px;
+    color: white;
 }
 
 .top_box_left {
@@ -76,6 +82,8 @@ h4 {font-size: 18px; color: #E5E7EB;}
     padding-left: 20vw;
     padding-right: 20vw;
 }
+
+.middle_box {margin-bottom: 40px;}
 
 .blue_box {
     display: flex;
@@ -127,3 +135,4 @@ p.quote {
     text-align: right;
     font-weight:bold;
 }
+
