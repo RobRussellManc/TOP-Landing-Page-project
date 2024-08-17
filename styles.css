@@ -1,0 +1,42 @@
+/* styles.css */
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color:aquamarine;
+    height: 72px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.main_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_box {
+    display: flex;
+    margin: 0px;
+    height: 300px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color:bisque;
+}
+
+.top_box_left, .top_box_right {
+    width: 500px;
+    flex-shrink: 1;
+}
